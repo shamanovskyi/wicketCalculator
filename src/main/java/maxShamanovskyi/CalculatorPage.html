@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <style>
+        .center {
+            width: 400px;
+            margin: auto;
+        }
+        .but{
+            width:30px;
+            height:30px;
+        }
+    </style>
+</head>
+<body onload="document.getElementById('input-field').select()">
+
+<form wicket:id="form" class="center">
+    <h1>Calculator</h1>
+    <div>
+        <span wicket:id="display">0</span>
+        <span wicket:id="text"></span>
+    </div>
+    <div>
+        <input id="input-field" value="0" type="text" wicket:id="input"/>
+        <input wicket:id="eq" value="=" type="submit"/>
+        <input type="submit" wicket:id="clear" value="c"/>
+    </div>
+    <div>
+        <input wicket:id="divided" class="but" value="/" type="submit"/>
+        <input wicket:id="multiply" class="but" value="*" type="submit"/>
+        <input wicket:id="minus" class="but" value="-" type="submit"/>
+        <input wicket:id="plus" class="but" value="+" type="submit"/>
+    </div>
+</form>
+</body>
+</html>
